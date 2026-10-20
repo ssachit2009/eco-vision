@@ -8,3 +8,36 @@
 /* Fix: keep the full sidebar reachable on shorter screens */
 .sidebar{height:100vh;height:100dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#cbd9cb transparent}
 .sidebar-bottom{margin-top:24px;flex-shrink:0}
+
+
+/* Student welcome and onboarding */
+.welcome-page{min-height:100vh;min-height:100dvh;background:#edf4e9;display:grid;place-items:center;padding:28px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif;color:#243b2b}
+.welcome-decoration{position:fixed;border-radius:50%;pointer-events:none;filter:blur(1px)}
+.welcome-decoration-one{width:440px;height:440px;background:#dcebd6;top:-190px;right:-120px}
+.welcome-decoration-two{width:360px;height:360px;background:#e1efdd;bottom:-170px;left:-100px}
+.welcome-card{position:relative;z-index:1;width:min(1120px,100%);background:#fff;border:1px solid #e2ebdf;border-radius:24px;box-shadow:0 22px 70px #294a2b12;overflow:hidden}
+.welcome-brand{display:flex;align-items:center;gap:10px;padding:22px 30px;border-bottom:1px solid #eef2eb;font-size:20px;font-weight:800;letter-spacing:-.8px;color:#2b5939}
+.welcome-brand>span:last-child>span{color:#78a56c}.welcome-brand small{display:block;font-size:8px;letter-spacing:1.5px;color:#91a28e;margin-top:3px;font-weight:700}
+.welcome-logo{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#e8f3e4;color:#34814c}
+.welcome-layout{display:grid;grid-template-columns:.92fr 1.08fr;gap:30px;padding:34px 38px 25px}
+.welcome-copy{position:relative;min-width:0;padding:13px 8px 0 0}
+.welcome-pill{display:inline-flex;align-items:center;gap:7px;background:#eef7e9;color:#4a8754;border-radius:30px;padding:8px 11px;font-size:9px;font-weight:800;letter-spacing:1px}
+.welcome-copy h1{font-family:Manrope,sans-serif;font-size:clamp(38px,4.4vw,58px);line-height:1.07;letter-spacing:-2.7px;margin:25px 0 16px;color:#254832}
+.welcome-copy h1 em{font-style:normal;color:#5c9a5e}
+.welcome-copy>p{font-size:13px;line-height:1.9;color:#7e8e7d;max-width:390px}
+.welcome-points{display:grid;gap:13px;margin-top:28px}.welcome-points>span{display:flex;align-items:center;gap:11px;font-size:12px;color:#47634b}.welcome-points>span>span{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#f0f6ed;font-size:17px}
+.welcome-art{font-size:65px;margin-top:25px;letter-spacing:5px;position:relative;max-width:280px;filter:saturate(.9)}.welcome-art span{font-size:46px}.welcome-art i{font-style:normal;font-size:20px;color:#d8b55e;vertical-align:top}
+.welcome-form{background:#fbfcfa;border:1px solid #e9efe6;border-radius:17px;padding:25px 25px 21px;min-width:0}
+.form-step{display:flex;justify-content:space-between;gap:10px;font-size:8px;font-weight:800;letter-spacing:1.4px;color:#5c9461}.form-step span{color:#a1ada0}
+.welcome-form h2{font-family:Manrope,sans-serif;font-size:23px;letter-spacing:-.7px;margin:12px 0 5px;color:#2d4933}
+.welcome-form-sub{font-size:10px;line-height:1.6;color:#8d998a;margin:0 0 20px}
+.welcome-form>label,.welcome-field-row label{display:block;font-size:10px;font-weight:700;color:#526553;margin:14px 0 7px}.welcome-form label b{color:#d37a50}.welcome-form label span{font-weight:400;color:#9aa59a}
+.welcome-form input:not([type=checkbox]),.welcome-form select{width:100%;min-width:0;height:39px;border:1px solid #e1e9dd;border-radius:8px;background:#fff;padding:0 11px;font:11px 'DM Sans',sans-serif;color:#435a45;outline:none}.welcome-form input:focus,.welcome-form select:focus{border-color:#78ad7c;box-shadow:0 0 0 3px #e6f2e4}
+.welcome-field-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}.welcome-field-row label{margin-top:14px}
+.welcome-interests{border:0;padding:0;margin:17px 0 19px;min-width:0}.welcome-interests legend{font-size:10px;font-weight:700;color:#526553}.welcome-interests>p{font-size:9px;color:#929e91;margin:5px 0 10px}.welcome-interests>div{display:flex;flex-wrap:wrap;gap:7px}
+.welcome-interests .interest-chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #e2e9df;border-radius:7px;padding:7px 9px;margin:0;font-size:9px;color:#718070;background:#fff;cursor:pointer}.welcome-interests .interest-chip.chosen{background:#eaf5e7;border-color:#b9d8b6;color:#347749}.interest-chip input{accent-color:#3f8b52;width:12px;height:12px;margin:0}
+.welcome-submit{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:0;border-radius:9px;background:#2e7b4b;color:#fff;padding:13px 14px;font:700 11px 'DM Sans',sans-serif;cursor:pointer;transition:background .2s}.welcome-submit:hover{background:#245f3b}
+.welcome-privacy{display:flex;align-items:flex-start;justify-content:center;gap:6px;text-align:center;font-size:8px;line-height:1.5;color:#96a194;margin-top:12px}.welcome-privacy svg{flex-shrink:0;color:#5b9666}
+.welcome-footer{text-align:center;padding:0 20px 22px;color:#a0ada0;font-size:9px;letter-spacing:.2px}
+@media(max-width:760px){.welcome-page{padding:12px}.welcome-card{border-radius:17px}.welcome-brand{padding:16px 19px}.welcome-layout{grid-template-columns:1fr;gap:22px;padding:22px 17px}.welcome-copy{padding:0}.welcome-copy h1{font-size:40px;margin:18px 0 10px}.welcome-copy>p{font-size:12px;margin-bottom:10px}.welcome-points{grid-template-columns:1fr 1fr;gap:9px;margin-top:17px}.welcome-points>span{font-size:10px;gap:7px}.welcome-points>span>span{width:29px;height:29px}.welcome-art{display:none}.welcome-form{padding:20px 16px}.welcome-form h2{font-size:21px}.welcome-footer{padding-bottom:17px}}
+@media(max-width:380px){.welcome-field-row{grid-template-columns:1fr;gap:0}.welcome-points{grid-template-columns:1fr}}
